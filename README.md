@@ -1,6 +1,6 @@
 ## Install
 ```
-xxh +I xxh-shell-nushell+git+https://github.com/agnosticlines/xxh-shell-nushell
+xxh +I xxh-shell-nushell+git+https://github.com/OJarrisonn/xxh-shell-nushell
 ```
 Connect:
 ```
@@ -14,8 +14,13 @@ hosts:
 ```
 
 ## Plugins
-In theory these can exist, but I haven't figured out a smooth way to make them work with elvish yet. Possible a wrapper script that loads multiple scripts in sequence, who knows. Some day :)
+
+WIP
 
 ## Thanks
+
 The [the xxh shell example](https://github.com/xxh/xxh-shell-example) for showing me where to start.
-The [elvish shell](https://github.com/krageon/xxh-shell-elvish) which I shamelessly ripped to make this
+
+The [elvish shell](https://github.com/krageon/xxh-shell-elvish) which [agnosticlines](https://github.com/agnosticlines) shamelessly ripped to make this (his own words)
+
+To [agnosticlines](https://github.com/agnosticlines/xxh-shell-nushell) which i forked this repo from

@@ -21,7 +21,7 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-url='https://github.com/nushell/nushell/releases/download/0.66.2/nu-0.66.2-x86_64-unknown-linux-gnu.tar.gz'
+url='https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-unknown-linux-gnu.tar.gz'
 tarname=`basename $url`
 #
 cd $build_dir
@@ -36,6 +36,7 @@ elif [ -x "$(command -v curl)" ]; then
   curl $arg_s -L $url -o $tarname
 else
   echo Install wget or curl
+  exit 1;
 fi
 #
 tar -xf $tarname

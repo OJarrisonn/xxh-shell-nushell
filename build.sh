@@ -21,8 +21,11 @@ do
     cp $CDIR/$f $build_dir/
 done
 
-url='https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-unknown-linux-gnu.tar.gz'
-tarname=`basename $url`
+version='0.94.2'
+arch='x86_64'
+target='unknown-linux-gnu'
+tarname="nu-${version}-${arch}-${target}.tar.gz"
+url="https://github.com/nushell/nushell/releases/download/${version}/${tarname}"
 #
 cd $build_dir
 #
@@ -42,4 +45,4 @@ fi
 tar -xf $tarname
 rm $tarname
 mkdir bin
-bash -c 'mv nu bin/nu'
+bash -c "mv nu-${version}-${arch}-${target}/nu bin/nu"
